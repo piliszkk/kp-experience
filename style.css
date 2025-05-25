@@ -1,0 +1,91 @@
+/* === Globalne ustawienia === */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  html, body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #f5f5f5;
+  }
+  
+  /* === Układ strony === */
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+  }
+  
+  /* === Menu z kwadratami === */
+  .main-menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  .menu-square {
+    width: 200px;
+    height: 200px;
+    background-color: #1e1e1e;
+    border-radius: 16px;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .menu-square:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.5);
+  }
+  
+  .menu-icon {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 10px;
+  }
+  
+  /* === Stopka === */
+  .footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #1e1e1e;
+    color: #ddd;
+    font-size: 0.9rem;
+  }
+  
+  /* === Stopka hyperlink === */
+  .footer a {
+    color: #4fc3f7;
+    text-decoration: underline
+  }
+
+  .page-title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 500;
+    color: #ccc;
+    margin: 40px auto 10px;
+    font-style: italic;
+    letter-spacing: 1px;
+  }
+  
