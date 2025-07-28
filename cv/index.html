@@ -5,17 +5,58 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Moje CV</title>
   <link rel="stylesheet" href="../style.css" />
+  <style>
+    .cv-section {
+      max-width: 600px;
+      margin: 60px auto;
+      padding: 0 20px;
+      text-align: center;
+    }
+
+    .cv-link {
+      display: block;
+      margin: 20px 0;
+      padding: 20px;
+      background-color: #f4f4f4;
+      border-radius: 8px;
+      text-decoration: none;
+      color: #222;
+      font-size: 1.2rem;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    .cv-link:hover {
+      background-color: #e0e0e0;
+    }
+
+    .cv-note {
+      margin-top: 30px;
+      font-size: 0.95rem;
+      color: #555;
+    }
+  </style>
 </head>
 <body>
 
-  <div class="content-page">
-    <div class="placeholder-title">
-      <a href="../index.html" class="back-link">← Wróć do strony głównej</a>
-    </div>
+  <h1 class="page-title">
+    <a href="../index.html" class="back-link">← Wróć do strony głównej</a>
+  </h1>
 
-    <div class="placeholder-container">
-      <p class="placeholder-text">To be added</p>
-    </div>
+  <div class="cv-section">
+    <a href="https://drive.google.com/file/d/13O9cp62KEf05A_Bzq7MpJ8zYys3j3vXS/view?usp=drive_link"
+       target="_blank" class="cv-link">
+      Poproś o dostęp do CV (PDF)
+    </a>
+
+    <a href="https://www.linkedin.com/in/krzysztof-piliszko"
+       target="_blank" class="cv-link">
+      Profil na LinkedIn
+    </a>
+
+    <p class="cv-note">
+      🔒 Pełne CV udostępniam po krótkim kontakcie przez LinkedIn.
+    </p>
   </div>
 
   <footer class="footer">

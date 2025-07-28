@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Wykop NLP – analiza wyborcza</title>
+  <link rel="stylesheet" href="../style.css" />
+  <style>
+    .cv-section {
+      max-width: 700px;
+      margin: 40px auto;
+      padding: 0 20px;
+      text-align: left;
+      line-height: 1.6;
+    }
+
+    .image-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 20px;
+    }
+
+    .image-card {
+      max-width: 220px;
+      text-align: center;
+    }
+
+    .image-card img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s ease;
+    }
+
+    .image-card img:hover {
+      transform: scale(1.03);
+    }
+
+    .image-card p {
+      margin-top: 10px;
+      font-size: 0.95rem;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <h1 class="page-title">
+    <a href="index.html" class="back-link">← Wróć do artykułów</a>
+  </h1>
+
+  <div class="container">
+
+    <div class="cv-section">
+      <h2>Wykop NLP – analiza wypowiedzi</h2>
+
+      <p>
+        Projekt zrealizowany <strong>for fun</strong> – jako forma upskillingu w czystym Pythonie
+        (API, przetwarzanie tekstu, wizualizacje). Zebrałem <strong>10 000 postów</strong> z tagu
+        <code>#wybory</code> z okresu <strong>30 maja – 17 lipca 2025</strong>.
+        Możliwe, że rozbuduję go w przyszłości o inne tagi.
+      </p>
+
+      <p style="margin-top: 20px;">
+        Pełny kod dostępny w repozytorium:
+        <a href="https://github.com/piliszkk/insight-sandbox/tree/main/wykop_wybory_text_mining" target="_blank">
+          GitHub → insight-sandbox
+        </a>
+      </p>
+
+      <h3 style="margin-top: 40px;">Wizualizacje</h3>
+
+      <div class="image-gallery">
+
+        <div class="image-card">
+          <a href="../images/bigrams_barh.png" target="_blank">
+            <img src="../images/bigrams_barh.png" alt="Bigrams wykres" />
+          </a>
+          <p>Bigrams – najczęstsze frazy</p>
+        </div>
+
+        <div class="image-card">
+          <a href="../images/most_common_tags.png" target="_blank">
+            <img src="../images/most_common_tags.png" alt="Najczęstsze tagi" />
+          </a>
+          <p>Najczęstsze tagi</p>
+        </div>
+
+        <div class="image-card">
+          <a href="../images/tag_map_short.png" target="_blank">
+            <img src="../images/tag_map_short.png" alt="Mapa tagów" />
+          </a>
+          <p>Mapa tagów</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <p>© 2025 kp-experience</p>
+  </footer>
+
+</body>
+</html>
